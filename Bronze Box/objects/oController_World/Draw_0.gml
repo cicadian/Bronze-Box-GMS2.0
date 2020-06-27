@@ -3,16 +3,11 @@ if (!is_undefined(world_vbuff)){
 	var _playerX = oPlayer.x;
 	var _playerY = oPlayer.y;
 	var _playerZ = oPlayer.z;
-	var _playerSpr = oPlayer.sprite_index;
-	var _playerSprW = oPlayer.sprite_width;
-	var _playerSprH = oPlayer.sprite_height;
-	var _playerSprOffX = oPlayer.sprite_xoffset;
-	var _playerSprOffY = oPlayer.sprite_yoffset;
 	var _playerDir = oPlayer.direction;
+	
 	var _camX = _playerX;
 	var _camY = _playerY;
 	var _camZ = _playerZ;
-	var _pitch = 0;
 	var _camDX = dcos(_playerDir);
 	var _camDY = -dsin(_playerDir);
 	

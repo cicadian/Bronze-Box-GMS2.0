@@ -1,6 +1,5 @@
 #region Macros
 #macro LAYER_NAME "cells" // name of the layer we paint our maps on
-#macro CELL_SIZE_GUI 32 // unused
 #macro CELL_SIZE_WORLD 32 // size of the cells in world space
 #macro FOGSTART CELL_SIZE_WORLD // where render fog starts
 #macro FOGEND CELL_SIZE_WORLD * 5 // .. ends
