@@ -6,8 +6,6 @@
 var _gridX = argument[0];
 var _gridY = argument[1];
 
-var _buildWall = false;
-
 for (var _i = 0; _i < __WALL.SIZE; _i++){
 	var _empty = global.world_grid[# _gridX, _gridY] == __CELL.EMPTY;
 	if (_empty){
