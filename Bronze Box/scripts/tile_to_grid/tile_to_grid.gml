@@ -14,9 +14,11 @@ var _tileMap = layer_tilemap_get_id(_layer);
 var _width = ds_grid_width(_grid)
 var _height = ds_grid_height(_grid)
 
+var _tile = -1;
+
 for (var _y = 0; _y < _height ; _y++){
 	for (var _x = 0; _x < _width; _x++){
-		var _tile = tilemap_get(_tileMap, _x, _y);
+		_tile = tilemap_get(_tileMap, _x, _y);
 		if (_tile == 1){
 			_grid[# _x, _y] = _value;
 		}
