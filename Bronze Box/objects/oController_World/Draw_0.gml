@@ -29,7 +29,7 @@ if (!is_undefined(world_vbuff)){
 												0, 0, 1));
 	matrix_set(matrix_projection, matrix_build_projection_perspective_fov(90, room_width / room_height,  1, 2000));
 	gpu_set_fog(true, COLOUR_FOG, FOGSTART, FOGEND);
-	vertex_submit(world_vbuff, pr_trianglelist, tex_world);
+	vertex_submit(world_vbuff, pr_trianglelist, world_texture);
 	gpu_set_fog(false, COLOUR_FOG, FOGSTART, FOGEND);
 	matrix_set(matrix_world, matrix_build_identity());
 	matrix_set(matrix_view, _viewPrev);

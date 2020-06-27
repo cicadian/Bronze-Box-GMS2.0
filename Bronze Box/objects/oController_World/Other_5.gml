@@ -1,1 +1,1 @@
-ds_grid_destroy(global.world_grid);
+world_destroy();

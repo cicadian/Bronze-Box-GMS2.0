@@ -29,7 +29,13 @@ enum __WALL{ // used to quickly reference the sides(faces/walls) of our world ce
 #region Init
 world_format = undefined;
 world_vbuff = undefined;
+world_width = undefined;
+world_height = undefined;
+world_texture = undefined;
 global.world_grid = undefined;
+
+var _layer = layer_get_id(LAYER_NAME);
+layer_set_visible(_layer, false);
 #endregion
 
 #region Vertex Format
@@ -44,7 +50,8 @@ world_format = vertex_format_end();
 #endregion
 
 #region Texture Coordinates
-tex_world = sprite_get_texture(sDungeon, 0);
+tex_room_0 = sprite_get_texture(sDungeon, 0);
+tex_room_1 = sprite_get_texture(sDungeon, 1);
 
 texcoord_size = 0.5; // normalized space our sprites take up on our texture
 texcoord_wall_u = 0.5;
