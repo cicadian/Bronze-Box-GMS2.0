@@ -22,7 +22,7 @@ var _build = false;
 // TODO West and South have horizontally flipped textures
 switch(_wall){
 	case __WALL.EAST:
-		if (_gridY - 1 < ds_grid_width(global.world_grid)){
+		if (_gridX + 1 < ds_grid_width(global.world_grid)){
 			_build = global.world_grid[# _gridX + 1, _gridY] == __CELL.FULL;
 		}
 		else{
