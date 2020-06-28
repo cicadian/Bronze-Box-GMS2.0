@@ -1,4 +1,4 @@
-/// @func tile_to_grid
+/// @func layer_tilemap_to_grid
 /// @desc {void} takes a given tile layer and populates a given ds_grid with a given value
 /// @arg {string} layerName
 /// @arg {grid} grid

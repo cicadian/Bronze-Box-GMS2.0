@@ -3,7 +3,7 @@
 #macro CELL_SIZE_WORLD 32 // size of the cells in world space
 #macro FOGSTART CELL_SIZE_WORLD // where render fog starts
 #macro FOGEND CELL_SIZE_WORLD * 5 // .. ends
-#macro COLOUR_FOG c_black // color of the render fog
+#macro COLOUR_FOG c_black // colour of the render fog
 #endregion
 
 #region Enums
@@ -52,7 +52,7 @@ world_format = vertex_format_end();
 tex_room_0 = sprite_get_texture(sDungeon, 0);
 tex_room_1 = sprite_get_texture(sDungeon, 1);
 
-texcoord_size = 0.5; // normalized space our sprites take up on our texture
+texcoord_size = 0.5; // normalised space our sprites take up on our texture
 texcoord_wall_u = 0.5;
 texcoord_wall_v = 0;
 texcoord_floor_u = 0.5;
