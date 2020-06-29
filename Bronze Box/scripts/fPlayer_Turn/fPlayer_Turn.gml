@@ -31,6 +31,6 @@ if (turning){
 	}
 	else{
 		turning = false;
-		turnCounter = 0;
+		turnCounter = 1;
 	}
 }
