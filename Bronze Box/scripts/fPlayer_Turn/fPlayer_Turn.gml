@@ -28,7 +28,6 @@ if (turning){
 			dir = 0;
 			nextDir = 0;
 		}
-		fTrace(startDir, nextDir, dir);
 	}
 	else{
 		turning = false;
