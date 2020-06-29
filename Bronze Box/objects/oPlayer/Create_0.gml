@@ -3,10 +3,6 @@
 z = 20;
 visible = false;
 
-moveDistance = CELL_SIZE_WORLD;
-moveTime = 30; // Time in steps to move one distance
-moveStep = moveDistance / moveTime; // Pixels to move per step
-
 moveCounter = 0;
 moveCounterMax = 30;
 moveCounterInc = 1;
