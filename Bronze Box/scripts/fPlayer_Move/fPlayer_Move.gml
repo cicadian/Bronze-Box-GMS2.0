@@ -63,6 +63,6 @@ if (moving){
 	}
 	else{
 		moving = false;
-		moveCounter = 0;
+		moveCounter = 1;
 	}
 }
