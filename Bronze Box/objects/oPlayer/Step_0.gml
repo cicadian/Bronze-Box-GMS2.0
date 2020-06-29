@@ -9,12 +9,12 @@ image_angle = dir;
 var _inMotion = moving || turning;
 
 if (!_inMotion){
-	if (keyboard_check_pressed(ord("A"))){
+	if (keyboard_check(ord("A"))){
 		startDir = dir;
 		nextDir = dir + 90; // Right...
 		turning = true;
 	}
-	if (keyboard_check_pressed(ord("D"))){
+	if (keyboard_check(ord("D"))){
 		startDir = dir;
 		nextDir = dir - 90; // Left...
 		turning = true;
@@ -47,7 +47,7 @@ var _moveX = false;
 var _moveY = false;
 
 if (!_inMotion){
-	if (keyboard_check_pressed(ord("W"))){
+	if (keyboard_check(ord("W"))){
 		// Make sure we're not trying to leave the grid
 		_moveX = (_gridX + _vecX) < ds_grid_width(global.world_grid) && (_gridX + _vecX) >= 0;
 		_moveY = (_gridY + _vecY) < ds_grid_height(global.world_grid) && (_gridY + _vecY) >= 0;
@@ -64,7 +64,7 @@ if (!_inMotion){
 			}
 		}
 	}
-	else if (keyboard_check_pressed(ord("S"))){
+	else if (keyboard_check(ord("S"))){
 		// Make sure we're not trying to leave the grid
 		_moveX = (_gridX - _vecX) < ds_grid_width(global.world_grid) && (_gridX - _vecX) >= 0;
 		_moveY = (_gridY - _vecY) < ds_grid_height(global.world_grid) && (_gridY - _vecY) >= 0;
