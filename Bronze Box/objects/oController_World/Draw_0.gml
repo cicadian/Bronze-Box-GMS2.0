@@ -3,7 +3,7 @@ if (!is_undefined(world_vbuff)){
 	var _playerX = oPlayer.x;
 	var _playerY = oPlayer.y;
 	var _playerZ = oPlayer.z;
-	var _playerDir = oPlayer.direction;
+	var _playerDir = oPlayer.dir;
 	
 	var _camX = _playerX;
 	var _camY = _playerY;
