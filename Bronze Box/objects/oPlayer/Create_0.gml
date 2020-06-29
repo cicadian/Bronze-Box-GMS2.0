@@ -12,7 +12,7 @@ moveCounterMax = 30;
 moveCounterInc = 1;
 
 turnCounter = 0;
-turnCounterMax = 30;
+turnCounterMax = 20;
 turnCounterInc = 1;
 
 moving = false;
