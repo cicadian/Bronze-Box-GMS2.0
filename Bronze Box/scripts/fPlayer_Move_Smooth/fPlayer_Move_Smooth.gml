@@ -57,9 +57,9 @@ if (!_inMotion){
 if (moving){
 	if (x != nextX || y != nextY){
 		// Move towards next position
-		var _counterPercentMove = moveCounter / moveCounterMax;
-		var _lerpX = lerp(startX, nextX, _counterPercentMove);
-		var _lerpY = lerp(startY, nextY, _counterPercentMove);
+		var _moveCounterPercent = moveCounter / moveCounterMax;
+		var _lerpX = lerp(startX, nextX, _moveCounterPercent);
+		var _lerpY = lerp(startY, nextY, _moveCounterPercent);
 		x = _lerpX;
 		y = _lerpY;
 		moveCounter += moveCounterInc;

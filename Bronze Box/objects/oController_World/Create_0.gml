@@ -4,6 +4,10 @@
 #macro FOGSTART CELL_SIZE_WORLD // where render fog starts
 #macro FOGEND CELL_SIZE_WORLD * 5 // .. ends
 #macro COLOUR_FOG c_black // colour of the render fog
+#macro GAME_WIDTH_FULL window_get_width()
+#macro GAME_HEIGHT_FULL window_get_height()
+#macro GAME_WIDTH_FULL_CENTER GAME_WIDTH_FULL / 2
+#macro GAME_HEIGHT_FULL_CENTER GAME_HEIGHT_FULL / 2
 #endregion
 
 #region Enums

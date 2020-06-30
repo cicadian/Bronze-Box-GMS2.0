@@ -8,3 +8,5 @@ else{
 }
 
 image_angle = dir;
+
+fPlayer_Freelook();
