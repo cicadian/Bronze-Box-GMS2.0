@@ -15,7 +15,7 @@ var _gridY = y div CELL_SIZE_WORLD;
 var _moveX = false;
 var _moveY = false;
 
-if (keyboard_check_pressed(ord("W"))){
+if (keyboard_check_pressed(KEY_FORWARD)){
 	// Make sure we're not trying to leave the grid
 	_moveX = (_gridX + _vecX) < ds_grid_width(global.world_grid) && (_gridX + _vecX) >= 0;
 	_moveY = (_gridY + _vecY) < ds_grid_height(global.world_grid) && (_gridY + _vecY) >= 0;
@@ -29,7 +29,7 @@ if (keyboard_check_pressed(ord("W"))){
 		}
 	}
 }
-else if (keyboard_check_pressed(ord("S"))){
+else if (keyboard_check_pressed(KEY_BACKWARD)){
 	// Make sure we're not trying to leave the grid
 	_moveX = (_gridX - _vecX) < ds_grid_width(global.world_grid) && (_gridX - _vecX) >= 0;
 	_moveY = (_gridY - _vecY) < ds_grid_height(global.world_grid) && (_gridY - _vecY) >= 0;
