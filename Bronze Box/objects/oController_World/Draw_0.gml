@@ -1,15 +1,15 @@
 if (!is_undefined(world_vbuff)){
 
-	var _playerX = oPlayer.x;
-	var _playerY = oPlayer.y;
-	var _playerZ = oPlayer.z;
 	var _playerDir = oPlayer.dir;
+	var _playerYaw = oPlayer.yaw;
+	var _playerPitch = oPlayer.pitch;
 	
-	var _camX = _playerX;
-	var _camY = _playerY;
-	var _camZ = _playerZ;
-	var _camDX = dcos(_playerDir);
-	var _camDY = -dsin(_playerDir);
+	var _camX = oPlayer.x;
+	var _camY = oPlayer.y;
+	var _camZ = oPlayer.z;
+	var _camDX = dcos(_playerDir + -_playerYaw);
+	var _camDY = -dsin(_playerDir + -_playerYaw);
+	var _camDZ = -dsin(_playerPitch);
 	
 	gpu_set_ztestenable(true);
 	gpu_set_zwriteenable(true);
@@ -20,7 +20,7 @@ if (!is_undefined(world_vbuff)){
 	var _projPrev = matrix_get(matrix_projection);
 	
 	matrix_set(matrix_view, matrix_build_lookat(_camX, _camY, _camZ,
-												_camX + _camDX, _camY + _camDY, _camZ,
+												_camX + _camDX, _camY + _camDY, _camZ + _camDZ,
 												0, 0, 1));
 	matrix_set(matrix_projection, matrix_build_projection_perspective_fov(90, room_width / room_height,  1, 2000));
 	gpu_set_fog(true, COLOUR_FOG, FOGSTART, FOGEND);
