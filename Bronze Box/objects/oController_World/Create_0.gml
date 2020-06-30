@@ -8,6 +8,8 @@
 #macro GAME_HEIGHT_FULL window_get_height()
 #macro GAME_WIDTH_FULL_CENTER GAME_WIDTH_FULL / 2
 #macro GAME_HEIGHT_FULL_CENTER GAME_HEIGHT_FULL / 2
+#macro GAME_FOV 75 // 90 lets you see corners better, 60 is very natural looking
+#macro GAME_ASPECT_DEFAULT GAME_WIDTH_FULL / GAME_HEIGHT_FULL
 #endregion
 
 #region Enums
