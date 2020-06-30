@@ -19,8 +19,8 @@ if (!_inMotion){
 if (turning){
 	if (dir != nextDir){
 		// Turn towards next dir
-		var _counterPercentTurn = turnCounter / turnCounterMax;
-		var _lerpDir = lerp(startDir, nextDir, _counterPercentTurn);
+		var _turnCounterPercent = turnCounter / turnCounterMax;
+		var _lerpDir = lerp(startDir, nextDir, _turnCounterPercent);
 		dir = _lerpDir;
 		turnCounter += turnCounterInc;
 		// Wrap our dir
